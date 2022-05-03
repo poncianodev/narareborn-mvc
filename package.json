@@ -1,0 +1,29 @@
+{
+    "name": "narareborn-mvc",
+    "version": "1.0.0",
+    "description": "Projeto Final Módulo 2 - Blue EdTech",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon -e js,html,ejs,css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/poncianodev/narareborn-mvc.git"
+    },
+    "author": "Lucas Ponciano",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/poncianodev/narareborn-mvc/issues"
+    },
+    "homepage": "https://github.com/poncianodev/narareborn-mvc#readme",
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.7",
+        "express": "^4.18.1",
+        "nodemon": "^2.0.16",
+        "pg": "^8.7.3",
+        "sequelize": "^6.19.0"
+    }
+}
