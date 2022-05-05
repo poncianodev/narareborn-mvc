@@ -31,6 +31,14 @@ main {
     min-height: 85%;
 }
 
+section article.cards {
+    height: 200px;
+    width: 150px;
+    border: 1px solid white;
+}
+
+section
+
 footer {
     background-color: #6B321E;
     width: 100%;

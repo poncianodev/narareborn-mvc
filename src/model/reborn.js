@@ -1,8 +1,8 @@
 import Sequelize from "sequelize";
-import { connections } from "../database/connection.js";
+import { connection } from "../database/connection.js";
 
-export const filmes = connection.define(
-    "Bebes",
+export const bebes = connection.define(
+    "bebes",
     {
         id: {
             type: Sequelize.INTEGER,
@@ -33,6 +33,10 @@ export const filmes = connection.define(
         data_nascimento: {
             type: Sequelize.STRING,
             allowNull: false,
+        },
+        img: {
+            type: Sequelize.STRING,
+            AllowNull: false,
         },
     },
     {
