@@ -8,25 +8,33 @@
             src="https://kit.fontawesome.com/71f92ea1b3.js"
             crossorigin="anonymous"
         ></script>
+        <script
+            src="https://kit.fontawesome.com/4609d6016a.js"
+            crossorigin="anonymous"
+        ></script>
         <link rel="stylesheet" href="./css/style.css" type="text/css" />
         <title>Nara Reborn Art</title>
     </head>
     <body>
         <%- include("./partials/header.ejs") %>
         <main>
-
             <section id="card-container">
-                <% listBebes.forEach(element => {%> 
+                <% listBebes.forEach(element => {%>
                 <a href="/detalhes/<%= element.id %>">
                     <article class="cards">
                         <div class="card_img">
-                            <img src="<%= element.img %>" alt="<%= element.nome_kit %>">
+                            <img
+                                src="<%= element.img %>"
+                                alt="<%= element.nome_kit %>"
+                            />
                         </div>
-                        <div class="card_nome">
-                            <%= element.nome_kit %> 
-                        </div>
+                        <div class="card_nome"><%= element.nome_kit %></div>
                     </article>
                 </a>
+                <div class="btn-container">
+                    <a href="/deletar/<%= element.id %>"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="/atualizar/<%= element.id %>"><i class="fa-solid fa-pencil"></i></a>
+                </div>
                 <% }) %>
             </section>
         </main>

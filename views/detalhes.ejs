@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/4609d6016a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/style.css" type="text/css" />
-        <title>Detalhes</title>
+        <title>Detalhes do Bebê</title>
     </head>
     <body>
         <%- include('./partials/header.ejs') %>
@@ -15,12 +16,28 @@
             <section id="details-container">
                 <iframe <%= bebesDetalhes.iframe %> ></iframe>
                 <table>
-                    <thead><th>Detalhes</th></thead>
+                    <thead><th colspan="2">Detalhes</th></thead>
                     <tbody>
-                        <td>
-                            <tr>1</tr>
-                            <tr></tr>
-                        </td>
+                        <tr>
+                            <td>Peso</td>
+                            <td><%= bebesDetalhes.peso %> </td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td><%= bebesDetalhes.sexo %> </td>
+                        </tr>
+                        <tr>
+                            <td>Tamanho</td>
+                            <td><%= bebesDetalhes.tamanho %> </td>
+                        </tr>
+                        <tr>
+                            <td>Corpinho</td>
+                            <td><%= bebesDetalhes.corpinho %> </td>
+                        </tr>
+                        <tr>
+                            <td>Nascimento</td>
+                            <td><%= bebesDetalhes.data_nascimento %> </td>
+                        </tr>
                     </tbody>
                     <tfoot></tfoot>
                 </table>

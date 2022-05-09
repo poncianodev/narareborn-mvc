@@ -19,3 +19,18 @@ export const getDetalhes = async (req, res) => {
         res.send(error.message);
     }
 };
+
+export const getDeletar = async (req, res) => {
+    try {
+        await bebes.destroy({
+            where: { id: req.params.id },
+        });
+        res.redirect("/");
+    } catch (error) {
+        res.send(error.message);
+    }
+};
+
+export const getCriar = async (req, res) => {
+    res.render("criar.ejs");
+};

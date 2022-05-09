@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/71f92ea1b3.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/4609d6016a.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
+        <title>Crie um Bebê</title>
+    </head>
+    <body>
+        <%- include("./partials/header.ejs") %>
+        <main>
+            <section id="form-container">
+                <form action="">
+                    <fieldset>
+                    <legend>Crie seu Bebê</legend>
+
+                    <fieldset>
+                    <label for="nome_kit">Nome do Kit</label>
+                    <input type="text" name="nome_kit" />
+                </fieldset>
+                   
+                <fieldset>
+                    <label for="peso">Peso</label>
+                    <input type="number" name="peso" /> 
+                </fieldset>
+
+                <fieldset>
+                    <label for="sexo">Sexo</label><br />
+                    <input type="radio" name="sexo" value="masculino" />
+                    <label for="sexo">Masculino</label><br />
+                    <input type="radio" name="sexo" value="feminino" />
+                    <label for="sexo">Feminino</label><br />
+                </fieldset>
+
+                <fieldset>
+                    <label for="tamanho">Tamanho</label>
+                    <input type="number" name="tamanho" />
+                </fieldset>
+
+                <fieldset>
+                    <label for="corpinho">Corpinho</label>
+                    <input type="text" name="corpinho" />
+                </fieldset>
+
+                <fieldset>
+                    <label for="data_nascimento">Ano de Nascimento</label>
+                    <input type="text" name="data_nascimento" />     
+                </fieldset>        
+
+                <fieldset>
+                    <label for="img">Imagem</label>
+                    <input type="url" name="img"/>
+                </fieldset>
+
+                <fieldset>
+                    <label for="iframe">Iframe</label>
+                    <input type="text" name="iframe">
+                </fieldset>
+                   </fieldset>
+            </section>
+        </main>
+        <%- include("./partials/footer.ejs") %>
+    </body>
+</html>
