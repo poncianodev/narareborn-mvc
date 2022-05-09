@@ -37,7 +37,11 @@ export const bebes = connection.define(
         img: {
             type: Sequelize.STRING,
             AllowNull: false,
-        },
+        }, 
+        iframe: {
+        type: Sequelize.STRING,
+        allowNull: false
+    }
     },
     {
         freezeTableName: true,

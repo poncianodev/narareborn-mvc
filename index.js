@@ -11,5 +11,5 @@ app.use(routers);
 app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(port, () => {
-    // console.log(`Estou rodando na porta http://localhost:${port}`);
+    console.log(`Estou rodando na porta http://localhost:${port}`);
 });

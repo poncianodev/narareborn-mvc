@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <title>Detalhes</title>
-</head>
-<body>
-    <%- include('./partials/header.ejs')  %> 
-    <main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+        <title>Detalhes</title>
+    </head>
+    <body>
+        <%- include('./partials/header.ejs') %>
+        <main>
+            <h1 id="nome-bebe"><%= bebesDetalhes.nome_kit %> </h1>
 
-    </main>
-    <%- include('./partials/footer.ejs')  %> 
-</body>
+            <section id="details-container">
+                <iframe <%= bebesDetalhes.iframe %> ></iframe>
+                <table>
+                    <thead><th>Detalhes</th></thead>
+                    <tbody>
+                        <td>
+                            <tr>1</tr>
+                            <tr></tr>
+                        </td>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+    </body>
 </html>
