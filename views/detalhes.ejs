@@ -4,39 +4,49 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/4609d6016a.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/4609d6016a.js"
+            crossorigin="anonymous"
+        ></script>
         <link rel="stylesheet" href="../css/style.css" type="text/css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://live.staticflickr.com/65535/52063342060_4085f3e141.jpg"
+        />
         <title>Detalhes do Bebê</title>
     </head>
     <body>
         <%- include('./partials/header.ejs') %>
         <main>
-            <h1 id="nome-bebe"><%= bebesDetalhes.nome_kit %> </h1>
+            <h1 id="nome-bebe"><%= bebesDetalhes.nome_kit %></h1>
 
             <section id="details-container">
-                <iframe <%= bebesDetalhes.iframe %> ></iframe>
+                <iframe <%="bebesDetalhes.iframe" %> ></iframe>
                 <table>
-                    <thead><th colspan="2">Detalhes</th></thead>
+                    <thead>
+                        <th colspan="2">Detalhes</th>
+                    </thead>
                     <tbody>
                         <tr>
                             <td>Peso</td>
-                            <td><%= bebesDetalhes.peso %> </td>
+                            <td><%= bebesDetalhes.peso %></td>
                         </tr>
                         <tr>
                             <td>Sexo</td>
-                            <td><%= bebesDetalhes.sexo %> </td>
+                            <td><%= bebesDetalhes.sexo %></td>
                         </tr>
                         <tr>
                             <td>Tamanho</td>
-                            <td><%= bebesDetalhes.tamanho %> </td>
+                            <td><%= bebesDetalhes.tamanho %></td>
                         </tr>
                         <tr>
                             <td>Corpinho</td>
-                            <td><%= bebesDetalhes.corpinho %> </td>
+                            <td><%= bebesDetalhes.corpinho %></td>
                         </tr>
                         <tr>
                             <td>Nascimento</td>
-                            <td><%= bebesDetalhes.data_nascimento %> </td>
+                            <td><%= bebesDetalhes.data_nascimento %></td>
                         </tr>
                     </tbody>
                     <tfoot></tfoot>

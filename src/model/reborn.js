@@ -37,11 +37,11 @@ export const bebes = connection.define(
         img: {
             type: Sequelize.STRING,
             AllowNull: false,
-        }, 
+        },
         iframe: {
-        type: Sequelize.STRING,
-        allowNull: false
-    }
+            type: Sequelize.STRING,
+            allowNull: false,
+        },
     },
     {
         freezeTableName: true,
@@ -50,3 +50,11 @@ export const bebes = connection.define(
         timestamps: false,
     },
 );
+
+const initTable = async () => {
+    await bebes.sync();
+};
+
+initTable();
+
+module.exports = bebes;
