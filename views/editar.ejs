@@ -13,25 +13,25 @@
             crossorigin="anonymous"
         ></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <link rel="stylesheet" href="./css/style.css" type="text/css" />
-        <title>Crie um Bebê</title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+        <title>Editar o Bebê</title>
     </head>
     <body>
         <%- include("./partials/header.ejs") %>
         <main>
             <section id="form-container">
-                <form method="POST" action="/criar">
+                <form method="POST" action="/editar/<%= bebesAtual.id %>">
                     <fieldset>
-                    <legend>Crie seu Bebê</legend>
+                    <legend>Editando <%= bebesAtual.nome_kit %> </legend>
 
                     <fieldset class="fieldset-data">
                     <label class="escolha" for="nome_kit">Nome</label>
-                    <input type="text" name="nome_kit" required/>
+                    <input type="text" name="nome_kit" value="<%= bebesAtual.nome_kit %> " required/>
                 </fieldset>
                    
                 <fieldset class="fieldset-data">
                     <label class="escolha" for="peso">Peso</label>
-                    <input type="number" name="peso" required/> 
+                    <input type="number" name="peso" value="<%= bebesAtual.peso %>" required/> 
                 </fieldset>
 
                 <fieldset class="fieldset-data">
@@ -44,27 +44,27 @@
 
                 <fieldset class="fieldset-data">
                     <label class="escolha" for="tamanho">Tamanho</label>
-                    <input type="number" name="tamanho" required/>
+                    <input type="number" name="tamanho" value="<%= bebesAtual.tamanho %>" required/>
                 </fieldset>
 
                 <fieldset class="fieldset-data">
                     <label class="escolha" for="corpinho">Corpinho</label>
-                    <input type="text" name="corpinho" required/>
+                    <input type="text" name="corpinho" value="<%= bebesAtual.corpinho %>" required/>
                 </fieldset>
 
                 <fieldset class="fieldset-data">
                     <label class="escolha" for="data_nascimento">Nascimento</label>
-                    <input type="text" name="data_nascimento" required/>     
+                    <input type="text" name="data_nascimento" value="<%= bebesAtual.data_nascimento %>" required/>     
                 </fieldset>        
 
                 <fieldset class="fieldset-data">
                     <label class="escolha" for="img">Imagem</label>
-                    <input type="url" name="img" required/>
+                    <input type="url" name="img" value="<%= bebesAtual.img %>" required/>
                 </fieldset>
 
                 <fieldset class="fieldset-data">
                     <label class="escolha" for="iframe">Iframe</label>
-                    <input type="text" name="iframe" required>
+                    <input type="text" name="iframe" value="<%= bebesAtual.iframe %>" required>
                 </fieldset>
                 <div id="btn-container">
                     <button id="btn-submit" type="submit">Enviar</button>
@@ -73,16 +73,5 @@
             </section>
         </main>
         <%- include("./partials/footer.ejs") %>
-        <% if (toggle) { %>
-            <script>
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Sucesso!',
-                    text: 'Bebê criado com sucesso',
-                    timer: 5000
-                })
-                setInterval(() => {window.location.href = "/"}, 5000)
-            </script>
-        <% } %>
     </body>
 </html>
