@@ -51,10 +51,8 @@ export const bebes = connection.define(
     },
 );
 
-const initTable = async () => {
-    await bebes.sync();
-};
+function initTable() {
+    bebes.async();
+}
 
 initTable();
-
-module.exports = bebes;

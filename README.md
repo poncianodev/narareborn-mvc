@@ -2,7 +2,7 @@ Este projeto é para fins de estudo, utilizado no Projeto Final, do Módulo 2, n
 
 Neste projeto eu fiz um site catálogo para a Loja da Artista Reborn Inaraí Silva.<br><br>
 
-This project is for study purposes, used in Final Project, Module 2, in the Full Stack course at <a href="https://blueedtech.com.br/">Blue EdTech</a>
+This project is for study purposes, used in Final biProject, Module 2, in the Full Stack course at <a href="https://blueedtech.com.br/">Blue EdTech</a>
 
 In this project I made a catalog for the website of the Loja da Artista Reborn Inaraí Silva.
 
